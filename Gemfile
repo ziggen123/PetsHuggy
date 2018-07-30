@@ -28,7 +28,7 @@ gem "figaro", "~> 1.1.0"
 
 #20180730up
 group :production do
-  gem 'pg', '~> 2.0'
+  gem 'pg'
 #  gem 'rails_12factor'
 end
 
