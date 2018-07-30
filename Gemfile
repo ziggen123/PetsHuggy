@@ -17,7 +17,7 @@ gem 'bootstrap-sass', '~> 3.3.7'
 gem 'devise'
 gem 'toastr-rails'
 gem 'omniauth-facebook'
-gem "paperclip", "~> 5.0.0.beta1"
+#gem "paperclip", "~> 5.0.0.beta1"
 gem 'dropzonejs-rails'
 gem "figaro", "~> 1.1.0"
 
@@ -28,7 +28,7 @@ gem "figaro", "~> 1.1.0"
 
 #20180730up
 group :production do
-  gem 'pg', '0.15.1'
+  gem 'pg', '~> 0.20'
   gem 'rails_12factor', '0.0.2'
 end
 
