@@ -27,17 +27,17 @@ gem "figaro", "~> 1.1.0"
 #end
 
 #20180730up
-#group :production do
-#  gem 'pg'
+group :production do
+  gem 'pg', '~> 2.0'
 #  gem 'rails_12factor'
-#end
+end
 
-#group :development, :test do 
-#	gem 'sqlite3'
-#end
+group :development, :test do 
+	gem 'sqlite3'
+end
 
-gem 'sqlite3', group: :development
-gem 'pg', group: :production
+#gem 'sqlite3', group: :development
+#gem 'pg', group: :production
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
