@@ -2,28 +2,32 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.4.1'
+gem 'puma', '~> 3.11'
 
 gem 'rails', '~> 5.2.0'
-gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
+gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+gem 'sdoc', '~> 0.4.0', group: :doc
+
 gem 'bootstrap-sass', '~> 3.3.7'
 gem 'devise'
 gem 'toastr-rails'
 gem 'omniauth-facebook'
-
+gem "paperclip", "~> 5.0.0.beta1"
+gem 'dropzonejs-rails'
 gem "figaro", "~> 1.1.0"
 
-group :production do
-  gem 'pg'
-  gem 'rails_12factor'
-end
+#group :production do 
+#	gem 'pg', '~> 1.0.0'
+#	gem 'rails_12factor'
+#end
 
-group :development, :test do
-  gem 'sqlite3'
+group :development, :test do 
+	gem 'sqlite3'
 end
 
 # Use ActiveModel has_secure_password
