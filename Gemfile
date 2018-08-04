@@ -21,6 +21,9 @@ gem 'omniauth-facebook'
 gem 'dropzonejs-rails'
 gem "figaro", "~> 1.1.0"
 
+#20180804 stripe
+gem 'stripe'
+
 #group :production do 
 #	gem 'pg', '~> 1.0.0'
 #	gem 'rails_12factor'
